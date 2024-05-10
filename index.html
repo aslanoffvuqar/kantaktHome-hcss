@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="navbar_logo">
+        <div class="nav_logo_info">
+            <img style="width:160px;" src="logo.svg">
+            <div class="nav_info">
+                <p style="color: red;">Kampaniya</p>
+                <p>Mağazalar</p>
+                <p>Korporativ satışlar</p>
+            </div>
+        </div>
+        <div class="nav_lng_call">
+            <h2 style="display: flex;">
+                <p style="color: red;">*</p>6060
+            </h2>
+            <div style="padding: 10px;
+            border: 1px solid green;
+            border-radius: 10px;
+        color: green;">
+                <p>Ayliq Ödəniş</p>
+            </div>
+            <div style="    padding: 10px;
+            background: gainsboro;
+            border-radius: 10px;
+            color: gray;">
+                <p>Daxil ol</p>
+            </div>
+            <p style="display: flex;
+            justify-content: center;
+            align-items: center;
+        ">AZ <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span></p>
+        </div>
+    </div>
+
+
+    <!-- ----------------------- end navbar------------------------- -->
+
+
+
+    <!-- --------------------------  start search section -------------------------------- -->
+
+    <div class="search_section">
+        <div class="left">
+            <span class="material-symbols-outlined">
+                grid_view
+            </span>
+            <p>Kataloq</p>
+        </div>
+        <div class="medium">
+            <span style="color: gray; margin: 0px 15px 0px 5px;" class="material-symbols-outlined">
+                search
+            </span>
+            <p style="color: gray;">Axtariş...</p>
+        </div>
+        <div class="right">
+
+            <span style="border-right: 1px solid gainsboro;
+            padding: 0px 25px 0px 25px;
+            color: gray;" class="material-symbols-outlined">
+                favorite
+            </span>
+            <svg style="color: gray;" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                    fill="currentColor" />
+                <path
+                    d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                    fill="currentColor" />
+                <path
+                    d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+    </div>
+    <div class="products">
+        <div class="products_name_icon">
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjI4MjcgMi40NDU4N0MxNi41NzYxIDEuODUxMzggMTcuNDIzOSAxLjg1MTM4IDE3LjcxNzMgMi40NDU4N0wxOC44Mjg4IDQuNjk4MUwyMS4zMTQzIDUuMDU5MjZDMjEuOTcwMyA1LjE1NDU5IDIyLjIzMjMgNS45NjA4MyAyMS43NTc2IDYuNDIzNThMMTkuOTU5MSA4LjE3NjY5TDIwLjM4MzYgMTAuNjUyMUMyMC40OTU3IDExLjMwNTUgMTkuODA5OSAxMS44MDM4IDE5LjIyMzEgMTEuNDk1M0wxNyAxMC4zMjY2TDE0Ljc3NjkgMTEuNDk1M0MxNC4xOTAxIDExLjgwMzggMTMuNTA0MyAxMS4zMDU1IDEzLjYxNjQgMTAuNjUyMUwxNC4wNDA5IDguMTc2NjlMMTIuMjQyNCA2LjQyMzU4QzExLjc2NzcgNS45NjA4MyAxMi4wMjk3IDUuMTU0NTkgMTIuNjg1NyA1LjA1OTI2TDE1LjE3MTIgNC42OTgxTDE2LjI4MjcgMi40NDU4N1pNMTcgMy4yNTE3TDE2LjAyMTMgNS4yMzQ4NkMxNS45MDQ3IDUuNDcwOTMgMTUuNjc5NSA1LjYzNDU2IDE1LjQxOSA1LjY3MjQyTDEzLjIzMDUgNS45OTA0M0wxNC44MTQxIDcuNTM0MTFDMTUuMDAyNiA3LjcxNzg2IDE1LjA4ODYgNy45ODI2MiAxNS4wNDQxIDguMjQyMDlMMTQuNjcwMyAxMC40MjE4TDE2LjYyNzggOS4zOTI2OEMxNi44NjA4IDkuMjcwMTcgMTcuMTM5MiA5LjI3MDE3IDE3LjM3MjIgOS4zOTI2OEwxOS4zMjk3IDEwLjQyMThMMTguOTU1OSA4LjI0MjA5QzE4LjkxMTQgNy45ODI2MiAxOC45OTc0IDcuNzE3ODcgMTkuMTg1OSA3LjUzNDExTDIwLjc2OTUgNS45OTA0M0wxOC41ODEgNS42NzI0MkMxOC4zMjA1IDUuNjM0NTYgMTguMDk1MyA1LjQ3MDkzIDE3Ljk3ODcgNS4yMzQ4NkwxNyAzLjI1MTdaIiBmaWxsPSIjRkYwMDNDIiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS13aWR0aD0iMC42NjY2NjciLz4KPHBhdGggZD0iTTIyIDEzLjM1NzhMMjIuNzQyOCAxMy40NjE4QzIyLjc4ODMgMTMuMTM2NCAyMi42MTY4IDEyLjgxOTMgMjIuMzE5NiAxMi42NzkzQzIyLjAyMjMgMTIuNTM5MyAyMS42Njg2IDEyLjYwOSAyMS40NDY4IDEyLjg1MTRMMjIgMTMuMzU3OFpNMTAuNjQyMiAyTDExLjE0ODYgMi41NTMyNUMxMS4zOTEgMi4zMzE0MSAxMS40NjA3IDEuOTc3NjYgMTEuMzIwNyAxLjY4MDQyQzExLjE4MDcgMS4zODMxOSAxMC44NjM2IDEuMjExNjcgMTAuNTM4MiAxLjI1NzI1TDEwLjY0MjIgMlpNMjEuNDQ2OCAxMi44NTE0QzIwLjExMyAxNC4zMDg2IDE4LjE5NzggMTUuMjIwNyAxNi4wNjg0IDE1LjIyMDdWMTYuNzIwN0MxOC42MzYgMTYuNzIwNyAyMC45NDczIDE1LjYxODcgMjIuNTUzMiAxMy44NjQyTDIxLjQ0NjggMTIuODUxNFpNMTYuMDY4NCAxNS4yMjA3QzEyLjA0MjcgMTUuMjIwNyA4Ljc3OTMgMTEuOTU3MyA4Ljc3OTMgNy45MzE2M0g3LjI3OTNDNy4yNzkzIDEyLjc4NTcgMTEuMjE0MyAxNi43MjA3IDE2LjA2ODQgMTYuNzIwN1YxNS4yMjA3Wk04Ljc3OTMgNy45MzE2M0M4Ljc3OTMgNS44MDIyMyA5LjY5MTQ0IDMuODg2OTYgMTEuMTQ4NiAyLjU1MzI1TDEwLjEzNTggMS40NDY3NUM4LjM4MTI5IDMuMDUyNjYgNy4yNzkzIDUuMzY0IDcuMjc5MyA3LjkzMTYzSDguNzc5M1pNMi43NSAxMS45NTEyQzIuNzUgNy4yNTc5NCA2LjIyNzU4IDMuMzc1NjggMTAuNzQ2MyAyLjc0Mjc1TDEwLjUzODIgMS4yNTcyNUM1LjI4OTA1IDEuOTkyNSAxLjI1IDYuNDk5NTEgMS4yNSAxMS45NTEySDIuNzVaTTEyLjA0ODggMjEuMjVDNi45MTMyMyAyMS4yNSAyLjc1IDE3LjA4NjggMi43NSAxMS45NTEySDEuMjVDMS4yNSAxNy45MTUyIDYuMDg0OCAyMi43NSAxMi4wNDg4IDIyLjc1VjIxLjI1Wk0yMS4yNTczIDEzLjI1MzdDMjAuNjI0MyAxNy43NzI0IDE2Ljc0MjEgMjEuMjUgMTIuMDQ4OCAyMS4yNVYyMi43NUMxNy41MDA1IDIyLjc1IDIyLjAwNzUgMTguNzEwOSAyMi43NDI4IDEzLjQ2MThMMjEuMjU3MyAxMy4yNTM3WiIgZmlsbD0iIzc3Nzc3NyIvPgo8L3N2Zz4K"
+                    alt="" class="catalogMenu__icon1">
+                <p>Bayram fürsətləri</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iNS43NSIgeT0iMi43NSIgd2lkdGg9IjEyLjUiIGhlaWdodD0iMTguNSIgcng9IjEuNzUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTEwIDE5SDE0IiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K"
+                    alt="" class="catalogMenu__icon1">
+                <p>Smartfonlar və <br> aksessuarlar </p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3Ljc1IDNDMTkuNTQ0OSAzIDIxIDQuNDU1MDcgMjEgNi4yNVYxNy43NUMyMSAxOS41NDQ5IDE5LjU0NDkgMjEgMTcuNzUgMjFINi4yNUM0LjQ1NTA3IDIxIDMgMTkuNTQ0OSAzIDE3Ljc1VjYuMjVDMyA0LjQ1NTA3IDQuNDU1MDcgMyA2LjI1IDNIMTcuNzVaTTE3Ljc1IDQuNUg2LjI1QzUuMjgzNSA0LjUgNC41IDUuMjgzNSA0LjUgNi4yNVYxNy43NUM0LjUgMTguNzE2NSA1LjI4MzUgMTkuNSA2LjI1IDE5LjVIMTcuNzVDMTguNzE2NSAxOS41IDE5LjUgMTguNzE2NSAxOS41IDE3Ljc1VjYuMjVDMTkuNSA1LjI4MzUgMTguNzE2NSA0LjUgMTcuNzUgNC41WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNMTEuNzUgNkMxMi4xMjk3IDYgMTIuNDQzNSA2LjI4MjE1IDEyLjQ5MzIgNi42NDgyM0wxMi41IDYuNzVWMTJIMTYuMjQ4M0MxNi42NjI1IDEyIDE2Ljk5ODMgMTIuMzM1OCAxNi45OTgzIDEyLjc1QzE2Ljk5ODMgMTMuMTI5NyAxNi43MTYxIDEzLjQ0MzUgMTYuMzUgMTMuNDkzMkwxNi4yNDgzIDEzLjVIMTEuNzVDMTEuMzcwMyAxMy41IDExLjA1NjUgMTMuMjE3OCAxMS4wMDY4IDEyLjg1MThMMTEgMTIuNzVWNi43NUMxMSA2LjMzNTc5IDExLjMzNTggNiAxMS43NSA2WiIgZmlsbD0iI0ZGMDAzQyIvPgo8L3N2Zz4K"
+                    alt="" class="catalogMenu__icon1">
+                <p>Smart qadjetlər</p>
+            </div>
+
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMjAuMjUiIHk9IjQuNzUiIHdpZHRoPSIxMi41IiBoZWlnaHQ9IjE2LjUiIHJ4PSIxLjc1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAyMC4yNSA0Ljc1KSIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNMiAyMEgyMiIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik03IDdIMTciIHN0cm9rZT0iI0ZGMDAzQyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+                    alt="" class="catalogMenu__icon1">
+                <p>Notbuklar, PK, planşetlər</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk5NzcgNUMxOC44NjM3IDUgMjEuOTk3NyA4LjEzNDAxIDIxLjk5NzcgMTJDMjEuOTk3NyAxNS43ODU1IDE4Ljk5MjkgMTguODY5MSAxNS4yMzg0IDE4Ljk5NTlMMTQuOTk3NyAxOUg5LjAwMTk1QzUuMTM1OTYgMTkgMi4wMDE5NSAxNS44NjYgMi4wMDE5NSAxMkMyLjAwMTk1IDguMjE0NTUgNS4wMDY3NCA1LjEzMDkgOC43NjEzIDUuMDA0MDZMOS4wMDE5NSA1SDE0Ljk5NzdaTTE0Ljk5NzcgNi41SDkuMDAxOTVDNS45NjQzOSA2LjUgMy41MDE5NSA4Ljk2MjQzIDMuNTAxOTUgMTJDMy41MDE5NSAxNC45NjM1IDUuODQ1NzMgMTcuMzc5NSA4Ljc4MDc1IDE3LjQ5NTZMOS4wMDE5NSAxNy41SDE0Ljk5NzdDMTguMDM1MyAxNy41IDIwLjQ5NzcgMTUuMDM3NiAyMC40OTc3IDEyQzIwLjQ5NzcgOS4wMzY1MiAxOC4xNTM5IDYuNjIwNDYgMTUuMjE4OSA2LjUwNDM3TDE0Ljk5NzcgNi41WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNOCA5QzguNDE0MjEgOSA4Ljc1IDkuMzM1NzkgOC43NSA5Ljc1TDguNzQ5MTIgMTEuMjQ4TDEwLjI1IDExLjI0ODdDMTAuNjY0MiAxMS4yNDg3IDExIDExLjU4NDUgMTEgMTEuOTk4N0MxMSAxMi40MTMgMTAuNjY0MiAxMi43NDg3IDEwLjI1IDEyLjc0ODdMOC43NDkxMiAxMi43NDhMOC43NSAxNC4yNUM4Ljc1IDE0LjY2NDIgOC40MTQyMSAxNSA4IDE1QzcuNTg1NzkgMTUgNy4yNSAxNC42NjQyIDcuMjUgMTQuMjVMNy4yNDkxMiAxMi43NDhMNS43NSAxMi43NDg3QzUuMzM1NzkgMTIuNzQ4NyA1IDEyLjQxMyA1IDExLjk5ODdDNSAxMS41ODQ1IDUuMzM1NzkgMTEuMjQ4NyA1Ljc1IDExLjI0ODdMNy4yNDkxMiAxMS4yNDhMNy4yNSA5Ljc1QzcuMjUgOS4zMzU3OSA3LjU4NTc5IDkgOCA5Wk0xNC43NSAxMi41QzE1LjQ0MDQgMTIuNSAxNiAxMy4wNTk2IDE2IDEzLjc1QzE2IDE0LjQ0MDQgMTUuNDQwNCAxNSAxNC43NSAxNUMxNC4wNTk2IDE1IDEzLjUgMTQuNDQwNCAxMy41IDEzLjc1QzEzLjUgMTMuMDU5NiAxNC4wNTk2IDEyLjUgMTQuNzUgMTIuNVpNMTYuNzUgOUMxNy40NDA0IDkgMTggOS41NTk2NCAxOCAxMC4yNUMxOCAxMC45NDA0IDE3LjQ0MDQgMTEuNSAxNi43NSAxMS41QzE2LjA1OTYgMTEuNSAxNS41IDEwLjk0MDQgMTUuNSAxMC4yNUMxNS41IDkuNTU5NjQgMTYuMDU5NiA5IDE2Ljc1IDlaIiBmaWxsPSIjRkYwMDNDIi8+Cjwvc3ZnPgo="
+                    alt="" class="catalogMenu__icon1">
+                <p>Geymerlər üçün məhsullar</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk5NzcgNUMxOC44NjM3IDUgMjEuOTk3NyA4LjEzNDAxIDIxLjk5NzcgMTJDMjEuOTk3NyAxNS43ODU1IDE4Ljk5MjkgMTguODY5MSAxNS4yMzg0IDE4Ljk5NTlMMTQuOTk3NyAxOUg5LjAwMTk1QzUuMTM1OTYgMTkgMi4wMDE5NSAxNS44NjYgMi4wMDE5NSAxMkMyLjAwMTk1IDguMjE0NTUgNS4wMDY3NCA1LjEzMDkgOC43NjEzIDUuMDA0MDZMOS4wMDE5NSA1SDE0Ljk5NzdaTTE0Ljk5NzcgNi41SDkuMDAxOTVDNS45NjQzOSA2LjUgMy41MDE5NSA4Ljk2MjQzIDMuNTAxOTUgMTJDMy41MDE5NSAxNC45NjM1IDUuODQ1NzMgMTcuMzc5NSA4Ljc4MDc1IDE3LjQ5NTZMOS4wMDE5NSAxNy41SDE0Ljk5NzdDMTguMDM1MyAxNy41IDIwLjQ5NzcgMTUuMDM3NiAyMC40OTc3IDEyQzIwLjQ5NzcgOS4wMzY1MiAxOC4xNTM5IDYuNjIwNDYgMTUuMjE4OSA2LjUwNDM3TDE0Ljk5NzcgNi41WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNOCA5QzguNDE0MjEgOSA4Ljc1IDkuMzM1NzkgOC43NSA5Ljc1TDguNzQ5MTIgMTEuMjQ4TDEwLjI1IDExLjI0ODdDMTAuNjY0MiAxMS4yNDg3IDExIDExLjU4NDUgMTEgMTEuOTk4N0MxMSAxMi40MTMgMTAuNjY0MiAxMi43NDg3IDEwLjI1IDEyLjc0ODdMOC43NDkxMiAxMi43NDhMOC43NSAxNC4yNUM4Ljc1IDE0LjY2NDIgOC40MTQyMSAxNSA4IDE1QzcuNTg1NzkgMTUgNy4yNSAxNC42NjQyIDcuMjUgMTQuMjVMNy4yNDkxMiAxMi43NDhMNS43NSAxMi43NDg3QzUuMzM1NzkgMTIuNzQ4NyA1IDEyLjQxMyA1IDExLjk5ODdDNSAxMS41ODQ1IDUuMzM1NzkgMTEuMjQ4NyA1Ljc1IDExLjI0ODdMNy4yNDkxMiAxMS4yNDhMNy4yNSA5Ljc1QzcuMjUgOS4zMzU3OSA3LjU4NTc5IDkgOCA5Wk0xNC43NSAxMi41QzE1LjQ0MDQgMTIuNSAxNiAxMy4wNTk2IDE2IDEzLjc1QzE2IDE0LjQ0MDQgMTUuNDQwNCAxNSAxNC43NSAxNUMxNC4wNTk2IDE1IDEzLjUgMTQuNDQwNCAxMy41IDEzLjc1QzEzLjUgMTMuMDU5NiAxNC4wNTk2IDEyLjUgMTQuNzUgMTIuNVpNMTYuNzUgOUMxNy40NDA0IDkgMTggOS41NTk2NCAxOCAxMC4yNUMxOCAxMC45NDA0IDE3LjQ0MDQgMTEuNSAxNi43NSAxMS41QzE2LjA1OTYgMTEuNSAxNS41IDEwLjk0MDQgMTUuNSAxMC4yNUMxNS41IDkuNTU5NjQgMTYuMDU5NiA5IDE2Ljc1IDlaIiBmaWxsPSIjRkYwMDNDIi8+Cjwvc3ZnPgo="
+                    alt="" class="catalogMenu__icon1">
+                <p>TV, audio və foto</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3Ljc0OTkgMi4wMDA5OEMxOC45NDA3IDIuMDAwOTggMTkuOTE1NSAyLjkyNjE0IDE5Ljk5NDcgNC4wOTY5M0wxOS45OTk5IDQuMjUwOThWMTkuNzQ5QzE5Ljk5OTkgMjAuOTM5OSAxOS4wNzQ3IDIxLjkxNDcgMTcuOTAzOSAyMS45OTM5TDE3Ljc0OTkgMjEuOTk5SDYuMjVDNS4wNTkxNCAyMS45OTkgNC4wODQzNiAyMS4wNzM5IDQuMDA1MTkgMTkuOTAzMUw0IDE5Ljc0OVY0LjI1MDk4QzQgMy4wNjAxMSA0LjkyNTE2IDIuMDg1MzMgNi4wOTU5NSAyLjAwNjE3TDYuMjUgMi4wMDA5OEgxNy43NDk5Wk0xNy43NDk5IDMuNTAwOThINi4yNUM1Ljg3MDMgMy41MDA5OCA1LjU1NjUxIDMuNzgzMTMgNS41MDY4NSA0LjE0OTIxTDUuNSA0LjI1MDk4VjE5Ljc0OUM1LjUgMjAuMTI4NyA1Ljc4MjE1IDIwLjQ0MjUgNi4xNDgyMyAyMC40OTIyTDYuMjUgMjAuNDk5SDE3Ljc0OTlDMTguMTI5NiAyMC40OTkgMTguNDQzNCAyMC4yMTY5IDE4LjQ5MyAxOS44NTA4TDE4LjQ5OTkgMTkuNzQ5VjQuMjUwOThDMTguNDk5OSAzLjg3MTI4IDE4LjIxNzcgMy41NTc0OSAxNy44NTE2IDMuNTA3ODJMMTcuNzQ5OSAzLjUwMDk4Wk0xOC43NSA3LjAwMDAxQzE5LjE2NDIgNy4wMDAwMSAxOS41IDcuMzM1OCAxOS41IDcuNzUwMDFDMTkuNSA4LjEyOTcxIDE5LjIxNzggOC40NDM1IDE4Ljg1MTggOC40OTMxNkwxOC43NSA4LjUwMDAxSDUuMjVDNC44MzU3OSA4LjUwMDAxIDQuNSA4LjE2NDIyIDQuNSA3Ljc1MDAxQzQuNSA3LjM3MDMxIDQuNzgyMTUgNy4wNTY1MiA1LjE0ODIzIDcuMDA2ODZMNS4yNSA3LjAwMDAxSDE4Ljc1WiIgZmlsbD0iIzc3Nzc3NyIvPgo8Y2lyY2xlIGN4PSIxMiIgY3k9IjE0IiByPSIzIiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+Cjwvc3ZnPgo="
+                    alt="" class="catalogMenu__icon1">
+                <p>Mətbəx texnikası</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuMTgxMTUgMTUuNVYxMi43NUMzLjE4MTE1IDExLjc4MzUgMy45NjQ2NSAxMSA0LjkzMTE1IDExSDcuNTI3MzFDMTIuMzA2NyAxMSAxNi4xODEyIDE0Ljg3NDUgMTYuMTgxMiAxOS42NTM4VjE5LjY1MzhDMTYuMTgxMiAyMC4zOTczIDE1LjU3ODUgMjEgMTQuODM1IDIxSDUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPGNpcmNsZSBjeD0iNSIgY3k9IjE4IiByPSIzIiBzdHJva2U9IiNGRjAwM0MiIHN0cm9rZS13aWR0aD0iMS41Ii8+CjxwYXRoIGQ9Ik0xMC41IDExLjVMMTEuMDkwMSAxMC41MTEzQzExLjUxMzggOS45NjE1MiAxMS42MDEgOS4yMjM0MSAxMS4zMTc0IDguNTg5MzlMMTAuOTA1NCA3LjY2OTVDMTAuMzQ0IDYuNDE2MTEgMTEuMjYxNyA1IDEyLjYzNTIgNUMxMy40MDI3IDUgMTQuMDk0NiA1LjQ2MzI0IDE0LjM4NzEgNi4xNzI3NkwyMC40ODAzIDIwLjkwMTIiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0xOCAyMUwyMiAyMSIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg=="
+                    alt="" class="catalogMenu__icon1">
+                <p>Ev texnikası</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMiIgcj0iMyIgc3Ryb2tlPSIjRkYwMDNDIiBzdHJva2Utd2lkdGg9IjEuNSIvPgo8cGF0aCBkPSJNMTguMDAyNyA2LjM0NjQ3QzE2LjkyMjEgNS4wMDc5OCAxNS40ODA1IDQuMDA3MjIgMTMuODQ4NyAzLjQ2MjcyQzEyLjIxNjkgMi45MTgyMyAxMC40NjMyIDIuODUyODEgOC43OTUzMiAzLjI3NDIxQzcuMTI3NDcgMy42OTU2MiA1LjYxNTMzIDQuNTg2MTkgNC40Mzc5OSA1Ljg0MDQ1QzMuMjYwNjUgNy4wOTQ3MiAyLjQ2NzQ0IDguNjYwMTIgMi4xNTIzMSAxMC4zNTEzQzEuODM3MTcgMTIuMDQyNCAyLjAxMzMgMTMuNzg4NSAyLjY1OTg2IDE1LjM4MjZDMy4zMDY0MSAxNi45NzY3IDQuMzk2MjkgMTguMzUyMiA1LjgwMDQxIDE5LjM0NkM3LjIwNDU0IDIwLjMzOTkgOC44NjQwOCAyMC45MTA1IDEwLjU4MjUgMjAuOTkwM0MxMi4zMDA5IDIxLjA3MDEgMTQuMDA2MiAyMC42NTU4IDE1LjQ5NjQgMTkuNzk2MyIgc3Ryb2tlPSIjNzc3Nzc3IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxtYXNrIGlkPSJwYXRoLTMtaW5zaWRlLTFfNjYxNV8xMjI3NzEiIGZpbGw9IndoaXRlIj4KPHBhdGggZD0iTTE2IDlDMTYgOC40NDc3MiAxNi40NDc3IDggMTcgOEgyMkMyMi41NTIzIDggMjMgOC40NDc3MiAyMyA5VjEyLjVDMjMgMTQuNDMzIDIxLjQzMyAxNiAxOS41IDE2QzE3LjU2NyAxNiAxNiAxNC40MzMgMTYgMTIuNVY5WiIvPgo8L21hc2s+CjxwYXRoIGQ9Ik0xNiA5QzE2IDguNDQ3NzIgMTYuNDQ3NyA4IDE3IDhIMjJDMjIuNTUyMyA4IDIzIDguNDQ3NzIgMjMgOVYxMi41QzIzIDE0LjQzMyAyMS40MzMgMTYgMTkuNSAxNkMxNy41NjcgMTYgMTYgMTQuNDMzIDE2IDEyLjVWOVoiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBtYXNrPSJ1cmwoI3BhdGgtMy1pbnNpZGUtMV82NjE1XzEyMjc3MSkiLz4KPHJlY3QgeD0iMTcuMDA0NCIgeT0iMTguNSIgd2lkdGg9IjQuOTkxMjEiIGhlaWdodD0iMS41IiByeD0iMC43NSIgZmlsbD0iIzc3Nzc3NyIvPgo8cmVjdCB4PSIxOC43NSIgeT0iMjAiIHdpZHRoPSI1IiBoZWlnaHQ9IjEuNSIgcng9IjAuNzUiIHRyYW5zZm9ybT0icm90YXRlKC05MCAxOC43NSAyMCkiIGZpbGw9IiM3Nzc3NzciLz4KPC9zdmc+Cg=="
+                    alt="" class="catalogMenu__icon1">
+                <p>Qab-qacaq</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMi43NUg5LjU5ODY4QzEwLjQzMzYgMi43NSAxMS4yNjE2IDIuOTAyNjggMTIuMDQxNiAzLjIwMDUyTDIxLjA4OTIgNi42NTUwNEMyMS4xODYgNi42OTIwMiAyMS4yNSA2Ljc4NDkzIDIxLjI1IDYuODg4NlYxMS4xMTE0QzIxLjI1IDExLjIxNTEgMjEuMTg2IDExLjMwOCAyMS4wODkyIDExLjM0NUwxMi4wNDE2IDE0Ljc5OTVDMTEuMjYxNiAxNS4wOTczIDEwLjQzMzYgMTUuMjUgOS41OTg2OCAxNS4yNUg5QzUuNTQ4MjIgMTUuMjUgMi43NSAxMi40NTE4IDIuNzUgOUMyLjc1IDUuNTQ4MjIgNS41NDgyMiAyLjc1IDkgMi43NVoiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPHBhdGggZD0iTTcgMTVWMjBDNyAyMS4xMDQ2IDcuODk1NDMgMjIgOSAyMlYyMkMxMC4xMDQ2IDIyIDExIDIxLjEwNDYgMTEgMjBWMTUiIHN0cm9rZT0iIzc3Nzc3NyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPGNpcmNsZSBjeD0iOSIgY3k9IjkiIHI9IjMiIHN0cm9rZT0iI0ZGMDAzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+Cg=="
+                    alt="" class="catalogMenu__icon1">
+                <p>Gözəllik və sağlamlıq <br> texnikası</p>
+            </div>
+
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjcxOTcgOS4yMTk2N0MxNC4wMTI2IDguOTI2NzggMTQuNDg3NCA4LjkyNjc4IDE0Ljc4MDMgOS4yMTk2N0MxNS4wNzMyIDkuNTEyNTYgMTUuMDczMiA5Ljk4NzQ0IDE0Ljc4MDMgMTAuMjgwM0wxMC4yODAzIDE0Ljc4MDNDOS45ODc0NCAxNS4wNzMyIDkuNTEyNTYgMTUuMDczMiA5LjIxOTY3IDE0Ljc4MDNDOC45MjY3OCAxNC40ODc0IDguOTI2NzggMTQuMDEyNiA5LjIxOTY3IDEzLjcxOTdMMTMuNzE5NyA5LjIxOTY3WiIgZmlsbD0iI0ZGMDAzQyIvPgo8cGF0aCBkPSJNMTcuNzUgMkMyMC4wOTcyIDIgMjIgMy45MDI3OSAyMiA2LjI1VjcuMjVDMjIgMTUuMzk2MiAxNS4zOTYyIDIyIDcuMjUgMjJINi4yNUMzLjkwMjc5IDIyIDIgMjAuMDk3MiAyIDE3Ljc1VjE2Ljc1QzIgOC42MDM4IDguNjAzOCAyIDE2Ljc1IDJIMTcuNzVaTTIwLjUgNi4yNUMyMC41IDQuNzMxMjIgMTkuMjY4OCAzLjUgMTcuNzUgMy41SDE2Ljc1QzE2LjM0NjcgMy41IDE1Ljk0NzcgMy41MTgwMSAxNS41NTM2IDMuNTUzMjhMMjAuNDQ2NyA4LjQ0NjMxQzIwLjQ4MiA4LjA1MjI1IDIwLjUgNy42NTMyMyAyMC41IDcuMjVWNi4yNVpNMjAuMTUzMyAxMC4yNzQyTDEzLjcyNTcgMy44NDY3MUM4LjgwMzg2IDQuOTk1OCA0LjkzNjY1IDguODg4MjcgMy44MjQxNCAxMy44MjQxTDEwLjE3NiAyMC4xNzU4QzE1LjExMTggMTkuMDYzMyAxOS4wMDQzIDE1LjE5NjEgMjAuMTUzMyAxMC4yNzQyWk0zLjU0Mzc4IDE1LjY2NUMzLjUxNDc4IDE2LjAyMjkgMy41IDE2LjM4NDcgMy41IDE2Ljc1VjE3Ljc1QzMuNSAxOS4yNjg4IDQuNzMxMjIgMjAuNSA2LjI1IDIwLjVINy4yNUM3LjYxNTMyIDIwLjUgNy45NzcxOSAyMC40ODUyIDguMzM1MDQgMjAuNDU2MkwzLjU0Mzc4IDE1LjY2NVoiIGZpbGw9IiM3Nzc3NzciLz4KPC9zdmc+Cg=="
+                    alt="" class="catalogMenu__icon1">
+                <p>Hobbi və əyləncə</p>
+            </div>
+
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjE5ODggNy43NTA5OEMxMC4xOTg4IDQuNTc1MzQgMTIuNzczMiAyLjAwMDk4IDE1Ljk0ODggMi4wMDA5OEMxNi44OTQ3IDIuMDAwOTggMTcuNzg5MyAyLjIyOTk2IDE4LjU3ODIgMi42MzYxN0MxOC43OTExIDIuNzQ1ODMgMTguOTM4OSAyLjk1MDU4IDE4Ljk3NTggMy4xODcyM0MxOS4wMTI4IDMuNDIzODcgMTguOTM0NSAzLjY2MzkzIDE4Ljc2NTEgMy44MzMyOUwxNS45OTk0IDYuNTk5MDZMMTcuMDYgNy42NTk3MkwxOS44Mzg2IDQuODgxMTdDMjAuMDA2OCA0LjcxMjk1IDIwLjI0NDkgNC42MzQ1MSAyMC40ODAxIDQuNjY5OEMyMC43MTU0IDQuNzA1MDggMjAuOTIgNC44NDk5MSAyMS4wMzE1IDUuMDYwMDhDMjEuNDU3NyA1Ljg2Mzc0IDIxLjY5ODggNi43ODAzMSAyMS42OTg4IDcuNzUwOThDMjEuNjk4OCAxMC45MjY2IDE5LjEyNDUgMTMuNTAxIDE1Ljk0ODggMTMuNTAxQzE1LjQ4ODMgMTMuNTAxIDE1LjAzOTYgMTMuNDQ2NyAxNC42MDkxIDEzLjM0MzlMNy4yNDQyNSAyMC45NjI4QzYuMTIyNDUgMjIuMTIzMiA0LjI5MDg1IDIyLjIwOTEgMy4wNjUzOCAyMS4xNTg3QzEuNzMxNjYgMjAuMDE1NSAxLjYzNjQ0IDE3Ljk4NTEgMi44NTczMiAxNi43MjIxTDEwLjMzMjYgOC45ODlDMTAuMjQ0OSA4LjU4OTcxIDEwLjE5ODggOC4xNzUzNyAxMC4xOTg4IDcuNzUwOThaTTE1Ljk0ODggMy41MDA5OEMxMy42MDE2IDMuNTAwOTggMTEuNjk4OCA1LjQwMzc3IDExLjY5ODggNy43NTA5OEMxMS42OTg4IDguMTgyOTQgMTEuNzYzIDguNTk4NTQgMTEuODgxOSA4Ljk4OTQ5QzExLjk2MTIgOS4yNTAwNyAxMS44OTI5IDkuNTMzMTIgMTEuNzAzNiA5LjcyODk0TDMuOTM1ODEgMTcuNzY0NkMzLjMxNTIxIDE4LjQwNjYgMy4zNjM2MSAxOS40Mzg3IDQuMDQxNTYgMjAuMDE5OEM0LjY2NDUgMjAuNTUzOCA1LjU5NTUzIDIwLjUxMDEgNi4xNjU3NyAxOS45MjAyTDEzLjg0MjIgMTEuOTc5MUMxNC4wNDIyIDExLjc3MjIgMTQuMzQzIDExLjY5OCAxNC42MTY0IDExLjc4ODFDMTUuMDM0NSAxMS45MjYgMTUuNDgyMiAxMi4wMDEgMTUuOTQ4OCAxMi4wMDFDMTguMjk2MSAxMi4wMDEgMjAuMTk4OCAxMC4wOTgyIDIwLjE5ODggNy43NTA5OEMyMC4xOTg4IDcuNDA4ODMgMjAuMTU4NiA3LjA3NjYgMjAuMDgyNSA2Ljc1ODU0TDE3LjU5MDMgOS4yNTA3MUMxNy4yOTc1IDkuNTQzNiAxNi44MjI2IDkuNTQzNiAxNi41Mjk3IDkuMjUwNzFMMTQuNDA4NCA3LjEyOTM5QzE0LjExNTUgNi44MzY1IDE0LjExNTUgNi4zNjE2MiAxNC40MDg0IDYuMDY4NzNMMTYuODc1MSAzLjYwMjAzQzE2LjU3NzIgMy41MzU4OSAxNi4yNjczIDMuNTAwOTggMTUuOTQ4OCAzLjUwMDk4WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE1LjAxMDUgMTcuNDIyM0MxNS4xNjk4IDE2Ljk1MiAxNS40MzIyIDE2LjUyMDMgMTUuNzc4NSAxNi4xNTQ0QzE1LjgzNyAxNi4wOTI2IDE1LjkyODkgMTYuMDcwNSAxNi4wMTExIDE2LjA5ODZMMTYuODM4NiAxNi4zODFDMTcuMDYzIDE2LjQ1NzUgMTcuMzA5OCAxNi4zNDYgMTcuMzkgMTYuMTMxOEMxNy4zOTc5IDE2LjExMDggMTcuNDA0IDE2LjA4OTEgMTcuNDA4MiAxNi4wNjcyTDE3LjU2NTggMTUuMjQxMkMxNy41ODE1IDE1LjE1OTEgMTcuNjQ3NiAxNS4wOTQxIDE3LjczMzEgMTUuMDc2N0MxNy45ODM0IDE1LjAyNTkgMTguMjQgMTUgMTguNSAxNUMxOC43NTk4IDE1IDE5LjAxNjMgMTUuMDI1OCAxOS4yNjY0IDE1LjA3NjZDMTkuMzUxOSAxNS4wOTQgMTkuNDE4IDE1LjE1ODkgMTkuNDMzNyAxNS4yNDFMMTkuNTkxOCAxNi4wNjcxQzE5LjYzNDUgMTYuMjkwOSAxOS44NTkyIDE2LjQzOTIgMjAuMDkzNiAxNi4zOTg0QzIwLjExNjYgMTYuMzk0MyAyMC4xMzkzIDE2LjM4ODUgMjAuMTYxMyAxNi4zODFMMjAuOTg4OCAxNi4wOTg2QzIxLjA3MTEgMTYuMDcwNSAyMS4xNjI5IDE2LjA5MjYgMjEuMjIxNSAxNi4xNTQ0QzIxLjU2NzggMTYuNTIwMyAyMS44MzAyIDE2Ljk1MiAyMS45ODk1IDE3LjQyMjNDMjIuMDE2NCAxNy41MDE2IDIxLjk5MDUgMTcuNTg4NiAyMS45MjM5IDE3LjY0MjVMMjEuMjUzMSAxOC4xODYxQzIxLjA3MTUgMTguMzMzMyAyMS4wNDkzIDE4LjU5MzIgMjEuMjAzNSAxOC43NjY1QzIxLjIxODcgMTguNzgzNSAyMS4yMzUzIDE4Ljc5OTQgMjEuMjUzMSAxOC44MTM5TDIxLjkyMzkgMTkuMzU3NEMyMS45OTA1IDE5LjQxMTQgMjIuMDE2NCAxOS40OTg0IDIxLjk4OTUgMTkuNTc3N0MyMS44MzAyIDIwLjA0OCAyMS41Njc4IDIwLjQ3OTcgMjEuMjIxNSAyMC44NDU1QzIxLjE2MjkgMjAuOTA3NCAyMS4wNzExIDIwLjkyOTUgMjAuOTg4OCAyMC45MDE0TDIwLjE2MTMgMjAuNjE5QzE5LjkzNyAyMC41NDI0IDE5LjY5MDEgMjAuNjU0IDE5LjYxIDIwLjg2ODFDMTkuNjAyMSAyMC44ODkyIDE5LjU5NiAyMC45MTA4IDE5LjU5MTggMjAuOTMyOUwxOS40MzM3IDIxLjc1OUMxOS40MTggMjEuODQxMSAxOS4zNTE5IDIxLjkwNiAxOS4yNjY0IDIxLjkyMzRDMTkuMDE2MyAyMS45NzQxIDE4Ljc1OTggMjIgMTguNSAyMkMxOC4yNCAyMiAxNy45ODM0IDIxLjk3NDEgMTcuNzMzMSAyMS45MjMzQzE3LjY0NzYgMjEuOTA1OSAxNy41ODE1IDIxLjg0MDkgMTcuNTY1OCAyMS43NTg4TDE3LjQwODIgMjAuOTMyOEMxNy4zNjU0IDIwLjcwOTEgMTcuMTQwOCAyMC41NjA4IDE2LjkwNjQgMjAuNjAxNkMxNi44ODM0IDIwLjYwNTYgMTYuODYwNyAyMC42MTE0IDE2LjgzODcgMjAuNjE4OUwxNi4wMTExIDIwLjkwMTRDMTUuOTI4OSAyMC45Mjk1IDE1LjgzNyAyMC45MDc0IDE1Ljc3ODUgMjAuODQ1NUMxNS40MzIyIDIwLjQ3OTcgMTUuMTY5OCAyMC4wNDggMTUuMDEwNSAxOS41Nzc3QzE0Ljk4MzYgMTkuNDk4NCAxNS4wMDk1IDE5LjQxMTQgMTUuMDc2MSAxOS4zNTc0TDE1Ljc0NjggMTguODEzOUMxNS45Mjg0IDE4LjY2NjcgMTUuOTUwNiAxOC40MDY4IDE1Ljc5NjQgMTguMjMzNUMxNS43ODEzIDE4LjIxNjQgMTUuNzY0NyAxOC4yMDA2IDE1Ljc0NjggMTguMTg2MUwxNS4wNzYxIDE3LjY0MjVDMTUuMDA5NSAxNy41ODg2IDE0Ljk4MzYgMTcuNTAxNiAxNS4wMTA1IDE3LjQyMjNaTTE4LjQ5OTkgMTkuNzVDMTkuMTkwMyAxOS43NSAxOS43NDk5IDE5LjE5MDQgMTkuNzQ5OSAxOC41QzE5Ljc0OTkgMTcuODA5NiAxOS4xOTAzIDE3LjI1IDE4LjQ5OTkgMTcuMjVDMTcuODA5NiAxNy4yNSAxNy4yNDk5IDE3LjgwOTYgMTcuMjQ5OSAxOC41QzE3LjI0OTkgMTkuMTkwNCAxNy44MDk2IDE5Ljc1IDE4LjQ5OTkgMTkuNzVaIiBmaWxsPSIjRkYwMDNDIi8+Cjwvc3ZnPgo="
+                    alt="" class="catalogMenu__icon1">
+                <p>Təmir tikinti</p>
+            </div>
+            <div class="products_name">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc5OTMgM0MxNy4yODk5IDMgMTguNTg5NCA0LjAxMzkzIDE4Ljk1MTggNS40NTk3NEwxOS4zMzcgN0gyMC4yNUMyMC42Mjk3IDcgMjAuOTQzNSA3LjI4MjE1IDIwLjk5MzIgNy42NDgyM0wyMSA3Ljc1QzIxIDguMTI5NyAyMC43MTc4IDguNDQzNDkgMjAuMzUxOCA4LjQ5MzE1TDIwLjI1IDguNUgxOS43MTRMMTkuOTIyIDkuMzI2NUMyMC41NzA4IDkuNzIxMjggMjEuMDA0MSAxMC40MzUgMjEuMDA0MSAxMS4yNVYxOS43NDY4QzIxLjAwNDEgMjAuNzEzMyAyMC4yMjA2IDIxLjQ5NjggMTkuMjU0MSAyMS40OTY4SDE3Ljc1QzE2Ljc4MzUgMjEuNDk2OCAxNiAyMC43MTMzIDE2IDE5Ljc0NjhMMTUuOTk5IDE4LjVIOC4wMDRMOC4wMDQwOCAxOS43NDY4QzguMDA0MDggMjAuNzEzMyA3LjIyMDU4IDIxLjQ5NjggNi4yNTQwOCAyMS40OTY4SDQuNzVDMy43ODM1IDIxLjQ5NjggMyAyMC43MTMzIDMgMTkuNzQ2OFYxMS4yNUMzIDEwLjQzNTIgMy40MzMxNiA5LjcyMTQ4IDQuMDgxNzcgOS4zMjY2Nkw0LjI4OSA4LjVIMy43NUMzLjM3MDMgOC41IDMuMDU2NTEgOC4yMTc4NSAzLjAwNjg1IDcuODUxNzdMMyA3Ljc1QzMgNy4zNzAzIDMuMjgyMTUgNy4wNTY1MSAzLjY0ODIzIDcuMDA2ODVMMy43NSA3SDQuNjYzTDUuMDQ4OTggNS40NjE3NkM1LjQxMDY4IDQuMDE0OTcgNi43MTA2MiAzIDguMjAxOTQgM0gxNS43OTkzWk02LjUwNCAxOC41SDQuNDk5TDQuNSAxOS43NDY4QzQuNSAxOS44ODQ4IDQuNjExOTMgMTkuOTk2OCA0Ljc1IDE5Ljk5NjhINi4yNTQwOEM2LjM5MjE1IDE5Ljk5NjggNi41MDQwOCAxOS44ODQ4IDYuNTA0MDggMTkuNzQ2OEw2LjUwNCAxOC41Wk0xOS41MDQgMTguNUgxNy40OTlMMTcuNSAxOS43NDY4QzE3LjUgMTkuODg0OCAxNy42MTE5IDE5Ljk5NjggMTcuNzUgMTkuOTk2OEgxOS4yNTQxQzE5LjM5MjIgMTkuOTk2OCAxOS41MDQxIDE5Ljg4NDggMTkuNTA0MSAxOS43NDY4TDE5LjUwNCAxOC41Wk0xOC43NTQxIDEwLjVINS4yNUM0LjgzNTc5IDEwLjUgNC41IDEwLjgzNTggNC41IDExLjI1VjE3SDE5LjUwNDFWMTEuMjVDMTkuNTA0MSAxMC44MzU4IDE5LjE2ODMgMTAuNSAxOC43NTQxIDEwLjVaTTEwLjI0OSAxNEgxMy43NTA3QzE0LjE2NSAxNCAxNC41MDA3IDE0LjMzNTggMTQuNTAwNyAxNC43NUMxNC41MDA3IDE1LjEyOTcgMTQuMjE4NiAxNS40NDM1IDEzLjg1MjUgMTUuNDkzMkwxMy43NTA3IDE1LjVIMTAuMjQ5QzkuODM0NzggMTUuNSA5LjQ5ODk5IDE1LjE2NDIgOS40OTg5OSAxNC43NUM5LjQ5ODk5IDE0LjM3MDMgOS43ODExNSAxNC4wNTY1IDEwLjE0NzIgMTQuMDA2OEwxMC4yNDkgMTRIMTMuNzUwN0gxMC4yNDlaTTE1Ljc5OTMgNC41SDguMjAxOTRDNy4zOTg5MiA0LjUgNi42OTg5NSA1LjA0NjUyIDYuNTA0MTkgNS44MjU1Nkw1LjcxMDU4IDlIMTguMjkyOUwxNy40OTY4IDUuODI0NDhDMTcuMzAxNyA1LjA0NTk2IDE2LjYwMTkgNC41IDE1Ljc5OTMgNC41WiIgZmlsbD0iIzc3Nzc3NyIvPgo8cGF0aCBkPSJNMTcgMTJDMTcuNTUyMiAxMiAxNy45OTk5IDEyLjQ0NzcgMTcuOTk5OSAxM0MxNy45OTk5IDEzLjU1MjIgMTcuNTUyMiAxMy45OTk5IDE3IDEzLjk5OTlDMTYuNDQ3NyAxMy45OTk5IDE2IDEzLjU1MjIgMTYgMTNDMTYgMTIuNDQ3NyAxNi40NDc3IDEyIDE3IDEyWk02Ljk5OTk3IDEyQzcuNTUyMjUgMTIgNy45OTk5NSAxMi40NDc3IDcuOTk5OTUgMTNDNy45OTk5NSAxMy41NTIyIDcuNTUyMjUgMTMuOTk5OSA2Ljk5OTk3IDEzLjk5OTlDNi40NDc3IDEzLjk5OTkgNiAxMy41NTIyIDYgMTNDNiAxMi40NDc3IDYuNDQ3NyAxMiA2Ljk5OTk3IDEyWiIgZmlsbD0iI0ZGMDAzQyIvPgo8L3N2Zz4K"
+                    alt="" class="catalogMenu__icon1">
+                <p>Avtomobil məhsulları</p>
+            </div>
+
+        </div>
+
+        <div class="slider_1">
+
+            <div class="slider_track_1">
+
+                <div class="slide_1">
+                    <img src="hissoppo_1_png.webp" alt="">
+                </div>
+                <div class="slide_1">
+                    <img src="squarelaptop_1_png.webp" alt="">
+                </div>
+
+                <div class="slide_1">
+                    <img src="Artboard_78_copy_9_3_copy_8_2_1.jpg" alt="">
+                </div>
+
+                <div class="slide_1">
+                    <img src="Artboard_92_copy_2_7_1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/Ashley_web_AZ_png.webp" alt="">
+                </div>
+
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_019_samsung_artiq_satishda_1080x1080.jpgaz_1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_021_iphone_coop_11_1080x1080_1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="hissoppo_1_png.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="squarelaptop_1_png.webp" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Artboard_78_copy_9_3_copy_8_2_1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Artboard_92_copy_2_7_1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/Ashley_web_AZ_png.webp" alt="">
+                </div>
+
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_019_samsung_artiq_satishda_1080x1080.jpgaz_1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_021_iphone_coop_11_1080x1080_1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="hissoppo_1_png.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="squarelaptop_1_png.webp" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Artboard_78_copy_9_3_copy_8_2_1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="Artboard_92_copy_2_7_1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/Ashley_web_AZ_png.webp" alt="">
+                </div>
+
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_019_samsung_artiq_satishda_1080x1080.jpgaz_1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="slide img/KH_2024_Single_post_021_iphone_coop_11_1080x1080_1.png" alt="">
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="offer">
+            <h2 style="display: flex;justify-content: center;">Günün təklifi</h2>
+            <div class="watch_wrapper">
+                <div class="watch">
+                    <p>01</p>
+                    <span>saat</span>
+                </div>
+                <div class="watch">
+                    <p>16</p>
+                    <span>dəqiqə</span>
+                </div>
+                <div class="watch_end">
+                    <p>44</p>
+                    <span>saniyə</span>
+                </div>
+            </div>
+
+            <div class="offer_products">
+
+                <h3 style="text-align: center; font-size: 16px;">tozsporan samsung <br> VCC4520S36/XEV(GÖY)</h3>
+                <div class="monney">
+                    <div>
+                        <h1 style="color: red;">99,99$</h1>
+                        <h2>189.99$</h2>
+                    </div>
+                    <p>0%18ay</p>
+                </div>
+                <img src="download.jpeg" alt="">
+                <div class="shopping_icon">
+                    <svg style="color: white;" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M10 22C11.1046 22 12 21.1046 12 20C12 18.8954 11.1046 18 10 18C8.89543 18 8 18.8954 8 20C8 21.1046 8.89543 22 10 22Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <h3>Səbətə at</h3>
+                </div>
+                <p>bütün təklifləri gör</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+
+        <div class="slider_track">
+
+            <div class="slide">
+                <img src="slide img/Acer.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="slide img/Applenewlogo.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Asus.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Blackwiev.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Braun.png" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="slide img/Dyson.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Electrolux (1).png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Gorenje.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Hoffmann.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Hp.png" alt="">
+            </div>
+
+
+
+            <div class="slide">
+                <img src="slide img/Acer.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="slide img/Applenewlogo.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Asus.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Blackwiev.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Braun.png" alt="">
+            </div>
+
+
+            <div class="slide">
+                <img src="slide img/Dyson.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Electrolux (1).png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Gorenje.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Hoffmann.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="slide img/Hp.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------ end slider track-------------------------------- -->
+
+
+    <div class="footer">
+        <div class="footer_wrapeer">
+            <svg width="40" height="27" viewBox="0 0 40 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M37.3639 26.1677H2.63606C1.18301 26.1677 0 25.0606 0 23.7014V2.46632C0 1.10585 1.18301 0 2.63606 0H7.97763C8.58071 0 9.07063 0.489922 9.07063 1.093C9.07063 1.69608 8.58071 2.186 7.97763 2.186H2.63606C2.36603 2.186 2.186 2.35445 2.186 2.46632V23.7014C2.186 23.8133 2.36603 23.9817 2.63606 23.9817H37.3639C37.634 23.9817 37.814 23.8133 37.814 23.7014V2.46632C37.814 2.35445 37.634 2.186 37.3639 2.186H15.6492C15.0461 2.186 14.5562 1.69608 14.5562 1.093C14.5562 0.489922 15.0461 0 15.6492 0H37.3639C38.817 0 40 1.10714 40 2.46632V23.7014C40 25.0606 38.817 26.1677 37.3639 26.1677Z"
+                    fill="#323232"></path>
+                <path d="M14.711 9.06348H12.6523V11.1222H14.711V9.06348Z" fill="#323232"></path>
+                <path
+                    d="M14.7134 8.51866V7.02447C14.7134 6.71328 14.4601 6.45996 14.1489 6.45996H10.0508V8.51866H14.7134Z"
+                    fill="#323232"></path>
+                <path
+                    d="M9.50401 6.45996H8.00981C7.69863 6.45996 7.44531 6.71328 7.44531 7.02447V8.51866H9.50401V6.45996Z"
+                    fill="#323232"></path>
+                <path
+                    d="M7.44531 13.1622C7.44531 13.4733 7.69863 13.7267 8.00981 13.7267H12.1079V11.668H7.44531V13.1622Z"
+                    fill="#323232"></path>
+                <path d="M12.6523 13.7247H14.1465C14.4577 13.7247 14.711 13.4714 14.711 13.1602V11.666H12.6523V13.7247Z"
+                    fill="#323232"></path>
+                <path d="M12.1095 9.06348H10.0508V11.1222H12.1095V9.06348Z" fill="#323232"></path>
+                <path d="M9.50401 9.06348H7.44531V11.1222H9.50401V9.06348Z" fill="#323232"></path>
+                <path
+                    d="M32.0886 19.3845H7.91395C7.45232 19.3845 7.07812 19.0103 7.07812 18.5487C7.07812 18.0871 7.45232 17.7129 7.91395 17.7129H32.0886C32.5502 17.7129 32.9244 18.0871 32.9244 18.5487C32.9244 19.0103 32.5502 19.3845 32.0886 19.3845Z"
+                    fill="#FF003C"></path>
+            </svg>
+            <div class="footer_text">
+                <h5>Zəmanət seçimi</h5>
+                <p style="    FONT-SIZE: 12px;
+                color: gray;
+            ">İstehsalçı zəmanəti, qızıl zəmanət, <br> zəmanət plus</p>
+            </div>
+        </div>
+
+
+
+        <div class="footer_wrapeer">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.8203 30.1132C21.5277 30.1132 21.235 30.0029 21.0105 29.7824C20.5546 29.3347 20.5477 28.6025 20.9955 28.1465C23.6481 25.4423 25.5357 22.2834 26.6055 18.7571C26.7906 18.1461 27.437 17.8004 28.0481 17.9855C28.6592 18.1706 29.0049 18.817 28.8198 19.4281C27.6412 23.3137 25.5643 26.7924 22.6464 29.7661C22.4191 29.9975 22.1197 30.1132 21.8203 30.1132Z"
+                    fill="#323232"></path>
+                <path
+                    d="M15.0249 34C14.6302 34 14.2369 33.9428 13.8545 33.8272C11.5068 33.1167 9.33604 31.7598 7.40072 29.7932C7.3912 29.785 7.38303 29.7755 7.37351 29.7674C4.22012 26.5527 2.05207 22.7542 0.930627 18.4753C-0.0356687 14.787 -0.0479172 11.4105 0.0282977 9.1907C0.0282977 9.17164 0.0296582 9.15395 0.0310192 9.1349C0.0909023 8.00664 0.793168 7.07029 1.8316 6.73957C6.512 5.25066 9.85593 3.46914 13.3741 0.587943C14.3308 -0.195981 15.719 -0.195981 16.6744 0.587943C20.1912 3.46914 23.5351 5.25066 28.2169 6.73957C29.3098 7.08662 30.0515 8.12369 30.0202 9.26147C30.0025 9.89977 29.469 10.4033 28.8307 10.3856C28.1924 10.3679 27.6888 9.8358 27.7065 9.19614C27.7093 9.08454 27.6317 8.9811 27.516 8.94436C22.5348 7.36018 18.9691 5.45753 15.2073 2.37763C15.1025 2.29189 14.9446 2.29189 14.8398 2.37763C11.0795 5.45753 7.51369 7.36018 2.53114 8.94436C2.3964 8.98655 2.34332 9.14578 2.33924 9.26827C2.33924 9.28324 2.33788 9.29685 2.33652 9.31182C2.17048 14.3093 2.69173 21.675 8.99715 28.1206C9.00668 28.1287 9.01485 28.1383 9.02301 28.1464C10.6889 29.8463 12.5384 31.0126 14.52 31.6115C14.848 31.7108 15.1964 31.7108 15.5258 31.6115C17.4897 31.0181 19.3243 29.8653 20.9806 28.1886C21.1915 27.9504 21.5005 27.7994 21.8448 27.7994C22.3103 27.7994 22.7322 28.0784 22.9132 28.5084C23.0942 28.9385 23.0003 29.4339 22.6736 29.766C20.7315 31.7476 18.5526 33.1126 16.194 33.8258C15.8129 33.9415 15.4196 33.9986 15.0249 34Z"
+                    fill="#323232"></path>
+                <path
+                    d="M15.2404 25.0267C14.8892 25.0267 14.5408 24.8675 14.3135 24.564L9.02478 17.5127C8.64098 17.001 8.74442 16.2769 9.25615 15.8931C9.76651 15.5094 10.4919 15.6128 10.8757 16.1245L15.4745 22.2557L31.8375 10.1362C32.3506 9.75649 33.076 9.86401 33.4557 10.3771C33.8354 10.8902 33.7279 11.6156 33.2148 11.9953L15.9277 24.7994C15.7208 24.9532 15.4799 25.0267 15.2404 25.0267Z"
+                    fill="#FF003C"></path>
+            </svg>
+            <div class="footer_text">
+                <h5>Pulsuz catdirilma </h5>
+                <p style="    FONT-SIZE: 12px;
+                color: gray;
+            ">49.99AZN-dən yuxarı sifarişlərə <br> pulsuz çatdırılma</p>
+            </div>
+        </div>
+
+
+        <div class="footer_wrapeer">
+            <svg width="40" height="26" viewBox="0 0 40 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.25152 7.08696V7.58696H7.75152H9.8465C10.0253 7.58696 10.1695 7.73122 10.1695 7.90999C10.1695 8.08816 10.0244 8.23301 9.8465 8.23301H6.9285C6.74973 8.23301 6.60547 8.08875 6.60547 7.90999V4.01932C6.60547 3.84055 6.74973 3.69629 6.9285 3.69629C7.10726 3.69629 7.25152 3.84055 7.25152 4.01932V7.08696Z"
+                    fill="#FF003C" stroke="#FF003C"></path>
+                <path
+                    d="M8.93031 13.9749C8.48737 13.9749 8.10279 13.6471 8.04144 13.1967C7.97559 12.7059 8.31977 12.2525 8.81059 12.1866C11.3979 11.838 13.3507 9.60384 13.3567 6.98961C13.3507 4.35742 11.3829 2.12178 8.77618 1.78808C8.28386 1.72523 7.93669 1.27481 7.99954 0.783987C8.06239 0.291668 8.51281 -0.0555 9.00363 0.00734928C12.4978 0.454776 15.1329 3.44161 15.1524 6.96267C15.1524 6.96716 15.1524 6.97165 15.1524 6.97614V7.00158C15.1524 7.00607 15.1524 7.01056 15.1524 7.01505C15.1329 10.5137 12.5157 13.4975 9.05002 13.9644C9.00961 13.9719 8.96921 13.9749 8.93031 13.9749Z"
+                    fill="#323232"></path>
+                <path
+                    d="M6.26398 14.0054C6.22657 14.0054 6.18766 14.0024 6.14876 13.9979C2.64266 13.549 0 10.5412 0 7.00367C0 3.4886 2.62321 0.483805 6.10237 0.0139312C6.59469 -0.051911 7.0466 0.292264 7.11245 0.783087C7.17829 1.27391 6.83411 1.72732 6.34329 1.79316C3.75001 2.14333 1.79569 4.38345 1.79569 7.00367C1.79569 9.64185 3.76497 11.8835 6.37621 12.2187C6.86853 12.2815 7.2157 12.7319 7.15285 13.2228C7.09449 13.6747 6.70842 14.0054 6.26398 14.0054Z"
+                    fill="#323232"></path>
+                <path
+                    d="M10.8857 25.741C8.46156 25.741 6.48828 23.7693 6.48828 21.3437C6.48828 18.918 8.46004 16.9463 10.8857 16.9463C13.3113 16.9463 15.283 18.918 15.283 21.3437C15.283 23.7693 13.3098 25.741 10.8857 25.741ZM10.8857 19.2247C9.71687 19.2247 8.76514 20.1764 8.76514 21.3452C8.76514 22.514 9.71687 23.4642 10.8857 23.4642C12.0544 23.4642 13.0062 22.5124 13.0062 21.3437C13.0062 20.1749 12.0544 19.2247 10.8857 19.2247Z"
+                    fill="#323232"></path>
+                <path
+                    d="M30.1278 25.741C27.7037 25.741 25.7305 23.7693 25.7305 21.3437C25.7305 18.918 27.7022 16.9463 30.1278 16.9463C32.5535 16.9463 34.5252 18.918 34.5252 21.3437C34.5252 23.7693 32.5519 25.741 30.1278 25.741ZM30.1278 19.2247C28.9591 19.2247 28.0073 20.1764 28.0073 21.3452C28.0073 22.514 28.9591 23.4657 30.1278 23.4657C31.2966 23.4657 32.2484 22.514 32.2484 21.3452C32.2484 20.1764 31.2966 19.2247 30.1278 19.2247Z"
+                    fill="#323232"></path>
+                <path
+                    d="M22.2045 22.4823H17.5992C16.9708 22.4823 16.4607 21.9722 16.4607 21.3438C16.4607 20.7154 16.9708 20.2054 17.5992 20.2054H22.2045C22.244 20.2054 22.2758 20.1735 22.2758 20.1341V4.44195C22.2758 4.40248 22.244 4.37061 22.2045 4.37061H16.2361C15.6077 4.37061 15.0977 3.86059 15.0977 3.23218C15.0977 2.60377 15.6077 2.09375 16.2361 2.09375H22.2045C23.4993 2.09375 24.5527 3.14718 24.5527 4.44195V20.1341C24.5527 21.4288 23.4993 22.4823 22.2045 22.4823Z"
+                    fill="#323232"></path>
+                <path
+                    d="M4.01941 22.482H2.3482C1.05343 22.482 0 21.4286 0 20.1338V15.6013C0 14.9729 0.510016 14.4629 1.13843 14.4629C1.76684 14.4629 2.27686 14.9729 2.27686 15.6013V20.1323C2.27686 20.1717 2.30873 20.2036 2.3482 20.2036H4.01941C4.64783 20.2036 5.15784 20.7136 5.15784 21.342C5.15784 21.9705 4.64935 22.482 4.01941 22.482Z"
+                    fill="#323232"></path>
+                <path
+                    d="M37.6507 21.9072H36.6322C36.0037 21.9072 35.4937 21.3972 35.4937 20.7688C35.4937 20.1403 36.0037 19.6303 36.6322 19.6303H37.6507C37.6901 19.6303 37.722 19.5984 37.722 19.559V14.1446C37.722 14.1249 37.7144 14.1082 37.7008 14.0945L31.5821 7.97584C31.5684 7.96218 31.5502 7.95459 31.532 7.95459H26.7126C26.0842 7.95459 25.5742 7.44458 25.5742 6.81616C25.5742 6.18775 26.0842 5.67773 26.7126 5.67773H31.532C32.1589 5.67773 32.7494 5.92212 33.1926 6.36535L39.3113 12.484C39.7545 12.9273 39.9989 13.5177 39.9989 14.1446V19.5575C39.9989 20.8522 38.9455 21.9072 37.6507 21.9072Z"
+                    fill="#323232"></path>
+                <path
+                    d="M34.2725 14.9312H27.322C26.6936 14.9312 26.1836 14.4211 26.1836 13.7927C26.1836 13.1643 26.6936 12.6543 27.322 12.6543H34.2725C34.9009 12.6543 35.4109 13.1643 35.4109 13.7927C35.4109 14.4211 34.9009 14.9312 34.2725 14.9312Z"
+                    fill="#323232"></path>
+            </svg>
+            <div class="footer_text">
+                <h5>Qapıda rəsmiləşdirmə</h5>
+                <p style="    FONT-SIZE: 12px;
+                color: gray;
+            ">Nağd, hissə-hissə və ya kartla <br> ödəmə imkanı</p>
+            </div>
+        </div>
+
+        <div class="footer_wrapeer">
+            <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.0404 35.0002C10.6973 35.0002 10.3703 34.8317 10.1721 34.5431L6.96183 29.859L1.81815 32.1565C1.44659 32.3224 1.01186 32.2593 0.703462 31.9942C0.395064 31.7292 0.266255 31.3105 0.37277 30.9179L2.1538 24.4057C2.30738 23.8446 2.88578 23.5139 3.44684 23.6675C4.0079 23.8211 4.33859 24.3995 4.18501 24.9605L2.99105 29.3264L6.90361 27.5788C7.36807 27.3707 7.91427 27.5256 8.20161 27.9454L10.6465 31.5137L11.9556 26.9694C12.1166 26.4109 12.7 26.0876 13.2586 26.2499C13.8172 26.4109 14.1392 26.9942 13.9782 27.5528L12.0498 34.2422C11.9371 34.6336 11.6088 34.9246 11.2063 34.9903C11.1518 34.9952 11.0961 35.0002 11.0404 35.0002Z"
+                    fill="#323232"></path>
+                <path
+                    d="M17.9896 34.8115C17.9339 34.8115 17.8781 34.8066 17.8211 34.7979C17.4186 34.7335 17.0904 34.4412 16.9777 34.0498L15.0493 27.3604C14.8883 26.8018 15.2103 26.2185 15.7689 26.0575C16.3275 25.8965 16.9108 26.2185 17.0718 26.7771L18.3822 31.3213L20.8271 27.753C21.1144 27.3332 21.6606 27.1796 22.1251 27.3864L26.0377 29.134L24.8437 24.7682C24.6901 24.2071 25.0208 23.6287 25.5819 23.4751C26.1429 23.3215 26.7226 23.6522 26.8749 24.2133L28.6559 30.7256C28.7637 31.1182 28.6349 31.538 28.3252 31.8031C28.0168 32.0681 27.5821 32.1313 27.2106 31.9653L22.0669 29.6678L18.8566 34.352C18.6596 34.6431 18.3339 34.8115 17.9896 34.8115Z"
+                    fill="#323232"></path>
+                <path
+                    d="M14.0008 23.9782C7.39072 23.9782 2.01172 18.6005 2.01172 11.9891C2.01172 5.379 7.38948 0 14.0008 0C20.6109 0 25.9899 5.37776 25.9899 11.9891C25.9899 18.5992 20.6109 23.9782 14.0008 23.9782ZM14.0008 2.10553C8.55123 2.10553 4.11724 6.53951 4.11724 11.9891C4.11724 17.4387 8.55123 21.8727 14.0008 21.8727C19.4504 21.8727 23.8844 17.4387 23.8844 11.9891C23.8844 6.53951 19.4504 2.10553 14.0008 2.10553Z"
+                    fill="#323232"></path>
+                <path
+                    d="M12.0722 9.76143L12.0733 9.76124C12.2376 9.73095 12.3796 9.62711 12.4598 9.47732C12.4599 9.47723 12.4599 9.47714 12.46 9.47705L13.3642 7.77987C13.4535 7.61049 13.6015 7.48551 13.7869 7.42836C13.8518 7.40809 13.9242 7.39476 14.0031 7.39476C14.1278 7.39476 14.2453 7.42702 14.3519 7.48727C14.454 7.54423 14.5465 7.62616 14.6157 7.73611L14.6288 7.75693L14.6399 7.77894C14.6402 7.77968 14.6406 7.7804 14.6409 7.7811L15.577 9.50398L15.5772 9.50447C15.6571 9.6518 15.7998 9.75492 15.9652 9.7841L15.9655 9.78416L17.8649 10.1207C18.0603 10.1542 18.2224 10.2623 18.3313 10.4163L18.3327 10.4183C18.4441 10.5773 18.4841 10.7655 18.4537 10.9516L18.4528 10.9572L18.4528 10.9572C18.4263 11.1086 18.3557 11.2448 18.2429 11.3535L18.2367 11.3595L18.231 11.3646L18.231 11.3647L18.231 11.3647L18.231 11.3647L18.2227 11.3738L18.2226 11.3737L16.9073 12.7596L16.9068 12.7602C16.7918 12.881 16.7377 13.0491 16.7611 13.2153L16.7612 13.2159L17.027 15.1238C17.0271 15.1245 17.0272 15.1252 17.0273 15.1258C17.0553 15.3213 17.0026 15.5117 16.8852 15.6643L12.0722 9.76143ZM12.0722 9.76143L10.175 10.1152C10.1701 10.116 10.1656 10.1168 10.1618 10.1175L10.1514 10.1195M12.0722 9.76143L10.1514 10.1195M10.1514 10.1195L10.1492 10.1198C10.0074 10.1428 9.87467 10.2056 9.7648 10.3114L9.76479 10.3114L9.76294 10.3132C9.62675 10.4457 9.54639 10.6201 9.54236 10.8174L9.54236 10.8176C9.53854 11.0088 9.60619 11.1907 9.74471 11.3337C9.74504 11.334 9.74536 11.3344 9.74569 11.3347L11.0828 12.7213C11.0828 12.7213 11.0829 12.7214 11.0829 12.7214C11.1988 12.842 11.2547 13.0101 11.2333 13.1785C11.2333 13.1787 11.2333 13.1789 11.2332 13.1791L10.9857 15.0602L10.9857 15.0602L10.9853 15.0634C10.9848 15.0672 10.9836 15.0753 10.9806 15.0911C10.9488 15.2523 10.9736 15.4081 11.0447 15.5483C11.197 15.8531 11.4939 15.9486 11.6945 15.9486C11.8024 15.9486 11.9103 15.9245 12.0104 15.8751L13.7395 15.0328C13.7396 15.0327 13.7397 15.0327 13.7398 15.0327C13.8929 14.9585 14.0687 14.958 14.2195 15.0302L14.2202 15.0305L15.9974 15.8777C15.9979 15.8779 15.9985 15.8782 15.999 15.8785C16.1336 15.9431 16.278 15.9608 16.4179 15.9393C16.6029 15.9115 16.7682 15.8164 16.8852 15.6643L10.1514 10.1195ZM10.0475 16.0255L10.0471 16.0247C9.87628 15.6744 9.82234 15.2921 9.88941 14.9111L9.89128 14.9005L9.89269 14.8897L10.071 13.536L10.1025 13.2972L9.93535 13.1237L8.94866 12.0999C8.94862 12.0999 8.94858 12.0998 8.94854 12.0998C8.60914 11.7467 8.42814 11.2852 8.43787 10.7967L8.43789 10.7957C8.44664 10.3067 8.64584 9.85321 8.99913 9.51358L8.99951 9.51322C9.2646 9.25784 9.59797 9.09004 9.96486 9.0297L9.96488 9.02981L9.97532 9.02787L11.3712 8.76778L11.6077 8.72369L11.7209 8.51128L12.3884 7.25792C12.3884 7.25791 12.3884 7.25789 12.3884 7.25788C12.6182 6.82664 12.9997 6.51262 13.4676 6.3691C13.938 6.22684 14.43 6.27567 14.8587 6.50401C15.1733 6.6725 15.4293 6.92466 15.6017 7.23467C15.6068 7.24479 15.6152 7.26098 15.6259 7.27922L16.3047 8.52856L16.4197 8.74023L16.6569 8.78221L18.0564 9.02992L18.0575 9.0301C18.5355 9.11367 18.9536 9.37883 19.2358 9.77894C19.5171 10.1791 19.6249 10.6628 19.541 11.1458L19.5362 11.1735C19.4663 11.5425 19.2891 11.873 19.0218 12.1355L19.0155 12.1418L19.0094 12.1482L18.0582 13.1514L17.8925 13.3262L17.9258 13.5647L18.1228 14.9729L18.1228 14.9736C18.1909 15.4555 18.0663 15.9351 17.7707 16.3263C17.4744 16.718 17.0473 16.9679 16.5633 17.0353C16.2035 17.0842 15.8452 17.029 15.5252 16.8763L15.5251 16.8762L14.2035 16.2458L13.9859 16.142L13.7692 16.2476L12.4935 16.8694L12.4917 16.8703C12.2424 16.993 11.9751 17.0542 11.6945 17.0542C10.9983 17.0542 10.3499 16.6488 10.0475 16.0255ZM14.6136 7.73508C14.614 7.73564 14.6143 7.7362 14.6147 7.73676L14.6136 7.73508Z"
+                    fill="#FF003C" stroke="#FF003C"></path>
+            </svg>
+            <div class="footer_text">
+                <h5>Ən yaxşı qiymətə zəmanət!</h5>
+                <p style="    FONT-SIZE: 12px;
+                color: gray;
+            ">Daha ucuz tap, qiymət fərqinin <br> 120%-ni geri al<br> ödəmə imkanı</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        var slideIndex = 0;
+        showSlides();
+
+        var myPause = setInterval(function () {
+            showSlides()
+        }, 2000);
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 20000); // Change image every 10 seconds
+
+        }
+
+
+    </script> -->
+</body>
+
+</html>

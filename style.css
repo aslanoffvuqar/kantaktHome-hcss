@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: gainsboro;
+}
+
+.navbar_logo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 75px;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0px 10px;
+    background-color: white;
+}
+
+.nav_info {
+    display: flex;
+    gap: 55px;
+    font-size: 18px;
+}
+
+.nav_logo_info {
+    display: flex;
+    width: 53%;
+    gap: 83px;
+    align-items: center;
+}
+
+.nav_lng_call {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 0px 0px;
+}
+
+/* ********************* start  search section  ******************************* */
+
+.search_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px 10px 40px;
+    background-color: white;
+}
+
+
+.medium {
+    display: flex;
+    background: gainsboro;
+    align-items: center;
+    width: 60%;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.right {
+    display: flex;
+    gap: 25px;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    gap: 15px;
+}
+
+/* ************ start products ********************************************88 */
+.products {
+    background-color: gainsboro;
+    display: flex;
+    gap: 15px;
+    margin: 15px 30px;
+}
+
+.products_name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.products_name_icon {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 21%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mySlides img {
+    width: 720px;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.monney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monney>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 19px;
+
+}
+
+.monney>div h2 {
+    text-decoration: line-through;
+}
+
+
+.slider_1 {
+    height: 650px;
+    width: 95%;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.slider_track_1 {
+    display: flex;
+    background-color: white;
+    width: calc(250px* 20);
+    animation: scroll 100s linear infinite;
+    height: 650px;
+
+}
+.slide_1{
+    height: 700px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: gainsboro;
+    margin: 0px 40px 0px 0px;
+
+}
+
+.slide_1 img{
+    width: 700px;
+    height: 700px;
+}
+/* ********** star offer*********************************** */
+
+
+.offer {
+    background: white;
+    padding: 20px 20px 0px;
+    border-radius: 10px;
+
+}
+
+.offer_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0px 0px;
+}
+
+.watch_wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    padding: 0px 0px 8px;
+}
+
+.watch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gainsboro;
+
+}
+
+.watch_end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch_end p {
+    color: green;
+}
+
+.watch p {
+    font-size: 21px;
+    color: green;
+    margin: 0px 35px 0px 0px;
+}
+
+.watch span {
+    margin: 0px 35px 0px 0px;
+}
+
+.shopping_icon {
+    display: flex;
+    padding: 15px 40px;
+    background-color: red;
+    border-radius: 10px;
+    gap: 10px;
+    color: white;
+}
+
+
+
+
+/* *********** slider**************************** */
+.slider {
+    height: 100px;
+    margin: 15px auto;
+    width: 95%;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slider_track {
+    display: flex;
+    background-color: white;
+    width: calc(250px * 20);
+    animation: scroll 300s linear infinite;
+}
+
+.slide {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.slide img {
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px *10));
+    }
+}
+
+/* ************ end slider_track ****************************************** */
+.footer {
+    display: flex;
+    width: 97%;
+    gap: 10px;
+    margin: 0px 36px 0px;
+}
+
+.footer_wrapeer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px 46px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
